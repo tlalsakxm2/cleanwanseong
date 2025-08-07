@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>클린완성</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <style>
     html {
       scroll-behavior: smooth;
@@ -20,7 +20,6 @@
     <div class="container mx-auto flex justify-between items-center">
       <h1 class="text-2xl font-bold">클린완성</h1>
       <nav class="space-x-4">
-        <a href="#homephoto" class="hover:underline">홈 화면 사진</a>
         <a href="#gallery" class="hover:underline">사진 갤러리</a>
         <a href="#contact" class="hover:underline">문의하기</a>
         <a href="#booking" class="hover:underline">예약</a>
@@ -29,48 +28,31 @@
   </header>
 
   <!-- Hero Section with Background Image -->
-  <section class="bg-cover bg-center bg-no-repeat text-white py-64 text-center" style="background-image: url('images/fafa.png');">
+  <section class="bg-cover bg-center bg-no-repeat text-white py-64 text-center" style="background-image: url('fafa.png');">
     <div class="bg-black bg-opacity-30 py-20 px-4">
-      <!-- 텍스트 없음 -->
-    </div>
-  </section>
-
-  <!-- Home Photo Section -->
-  <section id="homephoto" class="py-16 bg-gray-100">
-    <div class="container mx-auto text-center">
-      <h3 class="text-3xl font-bold mb-8">홈 화면 사진</h3>
-      <img src="images/fafa.png" alt="홈 배경 사진" class="mx-auto rounded shadow max-w-full h-auto">
     </div>
   </section>
 
   <!-- Gallery Section -->
   <section id="gallery" class="py-16 bg-white">
     <div class="container mx-auto text-center">
-      <div class="space-y-12">
-        <img src="images/1.png" alt="갤러리 이미지 1" class="gallery-item mx-auto rounded shadow max-w-md">
-        <img src="images/2.png" alt="갤러리 이미지 2" class="gallery-item mx-auto rounded shadow max-w-md">
-        <img src="images/3.png" alt="갤러리 이미지 3" class="gallery-item mx-auto rounded shadow max-w-md">
+      <div class="space-y-10 px-4">
+        <img src="1.png" alt="청소사진1" class="rounded shadow opacity-0">
+        <img src="2.png" alt="청소사진2" class="rounded shadow opacity-0">
+        <img src="3.png" alt="청소사진3" class="rounded shadow opacity-0">
       </div>
     </div>
   </section>
 
-  <!-- Reviews Section -->
-  <section id="reviews" class="py-16 bg-blue-50">
-    <div class="container mx-auto text-center">
-      <h3 class="text-3xl font-bold mb-8">고객 리뷰</h3>
-      <!-- 내용 제거됨 -->
-    </div>
-  </section>
-
   <!-- Booking Form Section -->
-  <section id="booking" class="py-16 bg-white booking-form">
+  <section id="booking" class="py-16 bg-white">
     <div class="container mx-auto max-w-xl">
       <h3 class="text-3xl font-bold mb-6 text-center">예약하기</h3>
-      <form class="space-y-4" action="mailto:tlalsakxm2@gmail.com" method="POST" enctype="text/plain">
-        <input type="text" name="이름" placeholder="이름" class="w-full border p-3 rounded">
-        <input type="tel" name="연락처" placeholder="연락처" class="w-full border p-3 rounded">
-        <input type="date" name="예약일" class="w-full border p-3 rounded">
-        <textarea name="요청사항" placeholder="요청 사항" class="w-full border p-3 rounded" rows="4"></textarea>
+      <form action="mailto:tlalsakxm2@gmail.com" method="POST" enctype="text/plain" class="space-y-4">
+        <input type="text" placeholder="이름" name="name" class="w-full border p-3 rounded">
+        <input type="tel" placeholder="연락처" name="phone" class="w-full border p-3 rounded">
+        <input type="date" name="date" class="w-full border p-3 rounded">
+        <textarea placeholder="요청 사항" name="message" class="w-full border p-3 rounded" rows="4"></textarea>
         <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-600">예약하기</button>
       </form>
     </div>
@@ -91,7 +73,7 @@
     <div class="container mx-auto text-center">
       <h3 class="text-3xl font-bold mb-6">오시는 길</h3>
       <div class="w-full h-96">
-        <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3166.2884623902726!2d127.0454829!3d37.7470606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cba9631e1c7cb%3A0x88f0c00b510d7e25!2z6rK96riw64-EIOyEnOuMgOuvuOyImCDqs6HsoJXrrLjroZwgMzY!5e0!3m2!1sko!2skr!4v1691601111111!5m2!1sko!2skr" allowfullscreen="" loading="lazy"></iframe>
+        <iframe class="w-full h-full" src="https://maps.google.com/maps?q=경기도 의정부시 신곡로36 삼익한일아파트&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </div>
   </section>
@@ -101,46 +83,20 @@
     <p>&copy; 2025 클린완성. All rights reserved.</p>
   </footer>
 
-  <!-- GSAP Scroll Animations -->
   <script>
     gsap.registerPlugin(ScrollTrigger);
-
-    gsap.utils.toArray(".gallery-item").forEach((item, index) => {
-      gsap.from(item, {
-        scrollTrigger: {
-          trigger: item,
-          start: "top 80%",
-        },
-        opacity: 0,
-        y: 50,
+    gsap.utils.toArray(".opacity-0").forEach((el, i) => {
+      gsap.to(el, {
+        opacity: 1,
+        y: -20,
         duration: 1,
-        delay: index * 0.4,
-        ease: "power2.out"
+        delay: i * 0.3,
+        scrollTrigger: {
+          trigger: el,
+          start: "top 80%",
+        }
       });
     });
-
-    gsap.from(".booking-form", {
-      scrollTrigger: {
-        trigger: ".booking-form",
-        start: "top 80%",
-      },
-      y: 80,
-      opacity: 0,
-      duration: 1.2,
-      ease: "expo.out"
-    });
-
-    gsap.from(".hero-section", {
-      scrollTrigger: {
-        trigger: ".hero-section",
-        start: "top top",
-      },
-      scale: 0.95,
-      opacity: 0,
-      duration: 1,
-      ease: "power1.out"
-    });
   </script>
-
 </body>
 </html>
